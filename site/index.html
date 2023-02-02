@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>   
+<html>  
+
+<head>
+    <title>Astronut.ro</title>  
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" />
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    
+    <header> <!-- o sectiune header(adica prima sectiune din pagina) -->
+        <img src="imagini/logo2.png" class="logo" width="70">
+        <!-- img = imagine = element gol (nu are /tag), iar src= atribut de cale/sursa(in raport cu pagina mea(index.html) in visual sau folder) -->
+        <nav>
+            <div>
+                <ul id="navbar">
+                    <!-- ul=unorderded list (nu conteaza ordinea elementelor) -->
+                    <li><a href="index.html">Acasa</a></li>  <!-- li = list item ->nu poate fi folosit decat in interiorul unei liste(ul/ol)-->
+                    <li><a href="shop.html">Magazin</a></li>
+                    <li><a href="about.html">Despre</a></li>
+                    <li><a href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <!-- <hr> = imi pune o liniuta -->
+    <!-- <br> ="\n" = imi adauga linie noua intre 2 elemente -->
+
+    <section id="hero">  <!-- o sectiune random = grup de chestii care sunt inauntrul unei sectiuni -->
+        <h4>Specialitati de Craciun</h4>
+        <h1>Gogosi gustoase de casa</h1>
+        <h2>Preturi accesibile</h2>
+        <p>Livrare gratuita la comenzi de peste 30 de lei!</p>  <!-- p = paragraph = un text de obicei lung(paragraf) cu multe propozitii, cu text mult mai mic decat h urile-->
+        <button type="button" onclick="window.location.href='shop.html'">Shop now</button>   <!-- button = element in linie -->
+    </section>
+
+    <section id="text">
+        <p>Noi impartim bucurie prin intermediul gogosilor artizanale, combinand sufletul </p>
+        <p>gogosii clasice cu tehnicile si creativitatea patiseriei moderne.</p>
+    </section>
+
+    <section id="page-header1">
+        <h2>Produse sezoniere</h2>
+        <p>#ChristmasDonuts</p>
+    </section>
+
+    <section id="product1" class="section-p1">
+        <div class="pro-container">
+
+            <div class="pro" onclick="window.location.href='produs9.html'">
+                <img src="imagini/produse/p9.png" width="300"/>
+                <div class="des">
+                    <h5>Gogoasa bradut</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>7.5 lei</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='produs12.html'">
+                <img src="imagini/produse/p12.png" width="300"/>
+                <div class="des">
+                    <h5>Xmas Filling</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>8 lei</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='produs10.html'">
+                <img src="imagini/produse/p10.png" width="300"/>
+                <div class="des">
+                    <h5>Rulou cu scortisoara</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>9 lei</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+            <div class="pro" onclick="window.location.href='produs11.html'">
+                <img src="imagini/produse/p11.png" width="300"/>
+                <div class="des">
+                    <h5>Frozen coconut</h5>
+                    <div class="star">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <h4>8.5 lei</h4>
+                </div>
+                <a href="#"><i class="fas fa-shopping-cart cart"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="section-p1">  <!-- sectiunea footer = sectiunea de la sfarsitul paginii(opusa cu header) -->
+        <div class="col">
+            <img src="imagini/logo2.png" class="logo" width="70"/>
+            <h4>Contact</h4>
+            <p><strong>Adresa: </strong> Strada Daliei nr 7, Timisoara</p>
+            <p><strong>Telefon: </strong> 0252 137 268 / 0734 236 448</p>
+            <p><strong>Program: </strong> 10:00 - 18:00, Luni - Vineri</p>
+        </div>
+
+        <div class="col">
+            <h4>About</h4>
+            <a href="#">Informatii livrari</a>
+            <a href="#">Politica si confidentialitate</a>
+            <a href="#">Termeni si conditii</a>
+            <a href="#">Contactati-ne</a>
+        </div>
+
+        <div class="col">
+            <h4>Contul meu</h4>
+            <a href="#">Conecteaza-te</a>
+            <a href="#">Vezi cos</a>
+            <a href="#">Urmareste comanda</a>
+            <a href="#">Ajutor</a>
+        </div>
+
+        <div class="col plata">
+            <p>Porti de plata securizate</p>
+            <img src="imagini/plata.png" width="200"/>
+        </div>
+
+        <div class="copyright">
+            <p>@ 2021, Tech2 etc - HTML CSS Ecommerce Template</p>
+        </div>
+    </footer>  
+
+    <script src="script.js"></script>
+</body>
+
+</html>

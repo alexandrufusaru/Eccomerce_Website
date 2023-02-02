@@ -1,0 +1,498 @@
+@import url('https://fonts.googlelaepis.com/css2?family=Spartan+sans-serif');
+
+/* * = selector universal( ne ia toate elementele din html si le pune setarile astea ) */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Spartan, sans-serif;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: 64px;
+    color: #222;
+}
+
+h2 {
+    font-size: 46px;
+    line-height: 64px;
+    color: #222;
+}
+
+h4 {
+    font-size: 20px;
+    color: #222;
+}
+
+h6 {
+    font-weight: 700;
+    font-size: 12px;
+}
+
+p {
+    font-size: 16px;
+    color: #465b52;
+    margin: 15px 0 20px 0;
+}
+
+.section-p1 {
+    padding: 40px 80px;
+}
+
+section-m1 {
+    margin: 40px 0;
+}
+
+body {
+    width: 100%;
+}
+
+/* Header start */
+
+header {
+    background-color: #f7f1e4;
+    background-size: cover; /* pentra ca imaginea sa creasca in inaltime si lungime exact cat pagina */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 80px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.06);
+    /* pentru ca meniul sa ramana mereu sus + umbra */
+    z-index: 999;
+    position: sticky;
+    top: 0;
+    left: 0;
+}
+
+#navbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+    #navbar li {
+        list-style: none; /* fara punct intre*/
+        padding: 0 20px;
+        background: #f7f1e4;
+    }
+
+        #navbar a {
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: #757575;
+            background: #f7f1e4;
+            transition: 0.5s ease;
+        }
+
+            #navbar a:hover { /* daca tinem mouse ul acolo */
+                color: #22c7c7;
+            }
+
+/* Home Page */
+#hero {
+    background-image: url("imagini/pff.png");
+    height: 90vh;
+    width: 100%;
+    background-size: cover;
+    padding: 0 80px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+#hero h4 {
+    padding-bottom: 15px;
+}
+
+#hero h1 {
+    color: #ff6a00;
+}
+
+#hero button
+{
+    background-image: url("imagini/buton.png");
+    background-color: transparent;
+    color: #222;
+    text-align: center;
+    border: 0;
+    padding: 14px 80px 14px 65px; /* sus stanga jos dreapta */
+    background-repeat: no-repeat;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 15px;
+}
+
+#text {
+    padding: 70px 70px 70px 70px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+#page-header1 {
+    background-image: url("imagini/christmas.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header1 h2,
+#page-header1 p {
+    color: #fff;
+}
+    
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+    footer .col {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        margin-bottom: 20px;
+    }
+
+footer .logo {
+    margin-bottom: 30px;
+} 
+
+footer h4{
+    font-size: 14px;
+    padding-bottom: 20px;
+}
+
+footer p{
+    font-size: 13px;
+    margin: 0 0 8px 0;
+}
+
+footer a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #222;
+    margin-bottom: 10px;
+}
+
+footer a:hover {
+    color: #088178;
+}
+
+footer .copyright {
+    width: 100%;
+    text-align: center;
+}
+
+/* Shop Page */
+#page-header {
+    background-image: url("imagini/banner.png");
+    width: 100%;
+    height: 40vh;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    padding: 14px;
+}
+
+#page-header h2,
+#page-header p {
+    color: #fff;
+}
+
+#product1 {
+    text-align: center;
+}
+
+#product1 .pro-container {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 100px;
+    padding-right: 100px;
+    flex-wrap: wrap;
+}
+
+    #product1 .pro {
+        width: 23%;
+        min-width: 250px;
+        padding: 10px 12px;
+        border: 1px solid #cce7d0;
+        border-radius: 25px;
+        cursor: pointer;
+        box-shadow: 20px 20px 30px rgba(0, 0, 0, 0.02);
+        margin: 15px 0;
+        transition: 0.2s ease;
+        position: relative;
+    }
+
+#product1 .pro:hover {
+    box-shadow: 20px 20px 30px rgba(0,0,0,0.06);
+}
+
+#product1 .pro img {
+    width: 100%;
+    border-radius: 20px;
+}
+
+#product1 .pro .des {
+    text-align: start;
+    padding-left: 10px 0;
+}
+
+#product1 .pro .des h5 {
+    padding-top: 7px;
+    color: #1a1a1a;
+    font-size: 14px;
+}
+
+#product1 .pro .des i {
+    font-size: 12px;
+    color: rgb(228, 170, 24);
+}
+    
+#product1 .pro .des h4 {
+    padding-top: 7px;
+    font-size: 15px;
+    font-weight: 700;
+    color: #088178;
+}
+/*  de ce nu mergeee???
+#product1 .pro .cart {
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border-radius: 50px;
+    background-color: #e8f6ea; 
+    font-weight: 500;
+    color: #088178;
+    border: 1px solid #cce7d0;
+    position: absolute;
+    bottom: 20px;
+    right: 10px; 
+}
+ */
+
+#pagination {
+    text-align: center;
+}
+
+#pagination a {
+    text-decoration: none;
+    background-color: #b1754a;
+    padding: 15px 20px;
+    border-radius: 4px;
+    color: #fff;
+    font-weight: 600;
+}
+
+#pagination a i {
+    font-size: 16px;
+    font-weight: 600;
+}
+ 
+/* Un Produs */
+
+#prodetails {
+    display: flex;
+    margin-top: 20px;
+}
+
+#prodetails .single-image {
+    width: 40%;
+    margin-right: 50px;
+}
+
+#prodetails .single-details {
+    width: 50%;
+}
+
+#prodetails .single-details h4 {
+    padding: 40px 0 20px 0;
+}
+
+#prodetails .single-details h2 {
+        font-size: 26px;
+    }
+
+#prodetails .single-details input {
+    width: 50px;
+    height: 47px;
+    padding-left: 10px;
+    font-size: 16px;
+    margin-right: 10px;
+}
+
+#prodetails .single-details input:focus {
+    outline: none;
+}
+
+    #prodetails .single-details button {
+        width: 150px;
+        height: 44px;
+        font-size: 16px;
+        font-weight: 600;
+        padding-left: 10px;
+        text-align: center;
+        margin-right: 10px;
+        background: #b1754a;
+        color: #fff;
+        cursor: pointer;
+    }
+
+#prodetails .single-details span {
+    line-height: 25px;
+}
+
+/* About Page */
+#page-header.about-header
+{
+    background-image: url("imagini/produse/despre.png");
+}
+
+#page-header.about-header h2,
+#page-header.about-header p
+{
+    color: #222;
+}
+
+/* Cart Page */
+#cart table {
+    width:100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+#cart table img {
+    width: 70px;
+}
+
+#cart table td:nth-child(1) 
+{
+    width: 100px;
+    text-align: center;
+}
+
+    #cart table td:nth-child(2) {
+        width: 150px;
+        text-align: center;
+    }
+
+    #cart table td:nth-child(3) {
+        width: 250px;
+        text-align: center;
+    }
+
+    #cart table td:nth-child(4),
+    #cart table td:nth-child(5),
+    #cart table td:nth-child(6) {
+        width: 150px;
+        text-align: center;
+    }
+
+#cart table td:nth-child(5) input {
+    width: 70px;
+    padding: 10px 5px 10px 15px;
+}
+
+#cart table thead {
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    border-left: none;
+    border-right: none;
+}
+
+#cart table thead td 
+{
+   font-weight: 700;
+   text-transform: uppercase;
+   font-size: 13px;
+   padding: 18px 0;
+}
+ 
+#cart table tbody tr td {
+    padding-top: 15px;
+}
+
+#cart table tbody td 
+{
+    font-size: 13px;
+}
+
+#cart-add {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+#subtotal {
+    width: 50%;
+    margin-bottom: 30px;
+    border: 1px solid #e2e9e1;
+    padding: 30px;
+}
+
+#subtotal table {
+    border-collapse: collapse;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+#subtotal table td 
+{
+    width: 50%;
+    border: 1px solid #e2e9e1;
+    padding: 10px;
+    font-size: 13px;
+}
+
+#cupon h3,
+#subtotal h3 {
+    padding-bottom: 15px;
+}
+
+    #subtotal button {
+        background-color: #b17545;
+        color: #fff;
+        width: 150px;
+        height: 44px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+
+/* Login */
+
+#login-form {
+    width: 50%;
+    margin: 5px auto;
+    text-align: center;
+    padding: 20px;
+    border-top: 1px solid #22c7c7;
+}
+
+#login-form input
+{
+    width: 50%;
+    margin: 5px auto;
+}
+
+    #login-form #login-btn {
+        background-color: #22c7c7;
+        color: #fff;
+    }
+
+    #login-form #register-url {
+        color: #22c7c7;
+    }
