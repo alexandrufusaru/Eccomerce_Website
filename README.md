@@ -1,1 +1,1 @@
-# Eccomerce_Website
+The project was to build and deploy an online donut shop website, and the main purpose of it was to learn and get familar with the basics of HTML, CSS and little Javascript(on the cart page, to give it some functionalities).  I achieved that goal, i guess, but then i wanted to expand my work. Therefore I started creating a database of donuts in MySQL and then use it to give my shop a real direction. I  wrote some PHP code, but i couldn't fully connect the pieces.  Although, I'm really excited  to learn PHP and finish this website.
